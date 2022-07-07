@@ -1,5 +1,7 @@
+#include "chapter1/biggerCppProgram.hh"
+
 int main()
 {
-	/* code */
+
 	return 0;
 }
