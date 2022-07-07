@@ -1,0 +1,15 @@
+[ 50%] Building CXX object CMakeFiles/proC++.dir/main.cpp.obj
+In file included from C:\Users\ALL\PLs\C++\proC++\main.cpp:1:
+C:\Users\ALL\PLs\C++\proC++\chapter1\crashCource.hh: In member function 'double AirlineTicket::calculatePriceInDollars()':
+C:\Users\ALL\PLs\C++\proC++\chapter1\crashCource.hh:141:5: warning: no return statement in function returning non-void [-Wreturn-type]
+  141 |     }; // read-only & not change anything
+      |     ^
+C:\Users\ALL\PLs\C++\proC++\main.cpp: In function 'int main()':
+C:\Users\ALL\PLs\C++\proC++\main.cpp:105:16: warning: 'void operator delete(void*, std::size_t)' called on unallocated object 'i' [-Wfree-nonheap-object]
+  105 |         delete myIntegerInFreeStore2;    // deallocate in free space
+      |                ^~~~~~~~~~~~~~~~~~~~~
+C:\Users\ALL\PLs\C++\proC++\main.cpp:103:13: note: declared here
+  103 |         int i{9};
+      |             ^
+[100%] Linking CXX executable proC++.exe
+[100%] Built target proC++

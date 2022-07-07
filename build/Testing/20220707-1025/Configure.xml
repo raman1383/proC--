@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20220707-1025-Continuous"
+	Name="DESKTOP-1E4BJE1"
+	Generator="ctest-3.24.0-rc2"
+	CompilerName="C:/mingw64/bin/g++.exe"
+	CompilerVersion="12.1.0"
+	OSName="Windows"
+	Hostname="DESKTOP-1E4BJE1"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22000)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="5"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="18947"
+	TotalPhysicalMemory="16131"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2592"
+	>
+	<Configure>
+		<StartDateTime>Jul 07 14:55 Iran Daylight Time</StartDateTime>
+		<StartConfigureTime>1657189512</StartConfigureTime>
+		<ConfigureCommand>"C:/Program Files/CMake/bin/cmake.exe" "C:/Users/ALL/PLs/C++/proC++"</ConfigureCommand>
+		<Log>-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ALL/PLs/C++/proC++/build
+</Log>
+		<ConfigureStatus>0</ConfigureStatus>
+		<EndDateTime>Jul 07 14:55 Iran Daylight Time</EndDateTime>
+		<EndConfigureTime>1657189513</EndConfigureTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Configure>
+</Site>

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/ALL/PLs/C++/proC++/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/proC++.dir/includes_CXX.rsp -g -o CMakeFiles\\proC++.dir\\main.cpp.obj -c C:\\Users\\ALL\\PLs\\C++\\proC++\\main.cpp",
+  "file": "C:/Users/ALL/PLs/C++/proC++/main.cpp"
+}
+]

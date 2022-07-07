@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20220707-1025-Continuous"
+	Name="DESKTOP-1E4BJE1"
+	Generator="ctest-3.24.0-rc2"
+	CompilerName="C:/mingw64/bin/g++.exe"
+	CompilerVersion="12.1.0"
+	OSName="Windows"
+	Hostname="DESKTOP-1E4BJE1"
+	OSRelease=" Professional"
+	OSVersion=" (Build 22000)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="5"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="18947"
+	TotalPhysicalMemory="16131"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2592"
+	>
+	<Build>
+		<StartDateTime>Jul 07 14:55 Iran Daylight Time</StartDateTime>
+		<StartBuildTime>1657189513</StartBuildTime>
+		<BuildCommand>C:/Program\ Files/CMake/bin/cmake.exe --build . --config "Release" -- -i</BuildCommand>
+		<Warning>
+			<BuildLogLine>4</BuildLogLine>
+			<Text>C:\Users\ALL\PLs\C++\proC++\chapter1\crashCource.hh:141:5: warning: no return statement in function returning non-void [-Wreturn-type]</Text>
+			<PreContext>[ 50%] Building CXX object CMakeFiles/proC++.dir/main.cpp.obj
+In file included from C:\Users\ALL\PLs\C++\proC++\main.cpp:1:
+C:\Users\ALL\PLs\C++\proC++\chapter1\crashCource.hh: In member function 'double AirlineTicket::calculatePriceInDollars()':
+</PreContext>
+			<PostContext>  141 |     }; // read-only &amp; not change anything
+      |     ^
+C:\Users\ALL\PLs\C++\proC++\main.cpp: In function 'int main()':
+</PostContext>
+			<RepeatCount>0</RepeatCount>
+		</Warning>
+		<Warning>
+			<BuildLogLine>8</BuildLogLine>
+			<Text>C:\Users\ALL\PLs\C++\proC++\main.cpp:105:16: warning: 'void operator delete(void*, std::size_t)' called on unallocated object 'i' [-Wfree-nonheap-object]</Text>
+			<PreContext></PreContext>
+			<PostContext>  105 |         delete myIntegerInFreeStore2;    // deallocate in free space
+      |                ^~~~~~~~~~~~~~~~~~~~~
+</PostContext>
+			<RepeatCount>0</RepeatCount>
+		</Warning>
+		<Warning>
+			<BuildLogLine>11</BuildLogLine>
+			<Text>C:\Users\ALL\PLs\C++\proC++\main.cpp:103:13: note: declared here</Text>
+			<PreContext></PreContext>
+			<PostContext>  103 |         int i{9};
+      |             ^
+[100%] Linking CXX executable proC++.exe
+[100%] Built target proC++
+</PostContext>
+			<RepeatCount>0</RepeatCount>
+		</Warning>
+		<Log Encoding="base64" Compression="bin/gzip"/>
+		<EndDateTime>Jul 07 14:55 Iran Daylight Time</EndDateTime>
+		<EndBuildTime>1657189516</EndBuildTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Build>
+</Site>
