@@ -34,4 +34,5 @@ namespace Records
         int m_salary{DefaultStartingSalary};
         bool m_hired{false};
     };
+
 }
