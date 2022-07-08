@@ -1,5 +1,4 @@
 CMakeFiles/proC++.dir/main.cpp.obj: C:\Users\ALL\PLs\C++\proC++\main.cpp \
- C:\Users\ALL\PLs\C++\proC++\chapter1\crashCource.hh \
  c:\mingw64\include\c++\12.1.0\iostream \
  c:\mingw64\include\c++\12.1.0\x86_64-w64-mingw32\bits\c++config.h \
  c:\mingw64\include\c++\12.1.0\x86_64-w64-mingw32\bits\os_defines.h \
@@ -136,14 +135,4 @@ CMakeFiles/proC++.dir/main.cpp.obj: C:\Users\ALL\PLs\C++\proC++\main.cpp \
  c:\mingw64\include\c++\12.1.0\bits\basic_ios.tcc \
  c:\mingw64\include\c++\12.1.0\bits\ostream.tcc \
  c:\mingw64\include\c++\12.1.0\istream \
- c:\mingw64\include\c++\12.1.0\bits\istream.tcc \
- c:\mingw64\include\c++\12.1.0\optional \
- c:\mingw64\include\c++\12.1.0\bits\enable_special_members.h \
- c:\mingw64\include\c++\12.1.0\cstddef \
- c:\mingw64\include\c++\12.1.0\array \
- c:\mingw64\include\c++\12.1.0\compare \
- c:\mingw64\include\c++\12.1.0\vector \
- c:\mingw64\include\c++\12.1.0\bits\stl_uninitialized.h \
- c:\mingw64\include\c++\12.1.0\bits\stl_vector.h \
- c:\mingw64\include\c++\12.1.0\bits\stl_bvector.h \
- c:\mingw64\include\c++\12.1.0\bits\vector.tcc
+ c:\mingw64\include\c++\12.1.0\bits\istream.tcc

@@ -1,7 +1,7 @@
-#include "chapter1/biggerCppProgram.hh"
+#include <iostream>
 
 int main()
 {
-
-	return 0;
+	int x{10'000'000};
+	std::cout << x << std::endl;
 }
