@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/proC++.dir/includes_CXX.rsp
 
-CXX_FLAGS = -g
+CXX_FLAGS =  -std=c++20 -g -std=gnu++20
 

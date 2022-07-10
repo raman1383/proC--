@@ -1,7 +1,6 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe --dry-run --keep-going --print-directory
 make: Entering directory 'c:/Users/ALL/PLs/C++/proC++'
-mkdir output
-g++ -std=c++17 -Wall -Wextra -g -Iinclude -o output\main.exe   -Llib
-echo Executing 'all' complete!
 make: Leaving directory 'c:/Users/ALL/PLs/C++/proC++'
  
+make: *** No targets specified and no makefile found.  Stop.
+

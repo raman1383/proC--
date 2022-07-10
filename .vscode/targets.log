@@ -1,4 +1,6 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for Windows32
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,38 +8,30 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 08 09:49:53 2022
+# Make data base, printed on Sun Jul 10 08:16:49 2022
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
-# makefile (from 'Makefile', line 18)
-OUTPUT := output
 # environment
 LC_ALL = C
-# makefile (from 'Makefile', line 21)
-SRC := src
 # environment
 USERPROFILE = C:\Users\ALL
-# makefile (from 'Makefile', line 36)
-MD := mkdir
+# environment
+DEVECOSTUDIO_VM_OPTIONS = C:\ja-netfilter\vmoptions\devecostudio.vmoptions
 # environment
 LOCALAPPDATA = C:\Users\ALL\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\ALL\PLs\C++\proC++
+VSCODE_CWD = C:\Users\ALL\AppData\Local\Programs\Microsoft VS Code
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
 SYSTEMROOT = C:\Windows
-# makefile (from 'Makefile', line 51)
-LIBS := -Llib
 # environment
 PROCESSOR_LEVEL = 6
 # environment
 PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
-# environment
-FRAMEWORKDIR32 = C:\Windows\Microsoft.NET\Framework\
 # default
 MAKE_COMMAND := make.exe
 # environment
@@ -45,9 +39,9 @@ GOPATH = C:\Users\ALL\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1040_JYDDYPEVLGDIZFKS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13428_PDEEHRXPKVNCCSAW
 # environment
-FRAMEWORKVERSION32 = v4.0.30319
+STUDIO_VM_OPTIONS = C:\ja-netfilter\vmoptions\studio.vmoptions
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -71,6 +65,8 @@ TMP = C:\Users\ALL\AppData\Local\Temp
 # makefile
 MAKEFLAGS = pqrR
 # environment
+GOLAND_VM_OPTIONS = C:\ja-netfilter\vmoptions\goland.vmoptions
+# environment
 ONEDRIVE = C:\Users\ALL\OneDrive
 # makefile
 CURDIR := c:/Users/ALL/PLs/C++/proC++
@@ -81,9 +77,9 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 PROGRAMFILES = C:\Program Files
 # environment
+JETBRAINSCLIENT_VM_OPTIONS = C:\ja-netfilter\vmoptions\jetbrainsclient.vmoptions
+# environment
 MFLAGS = -pqrR
-# makefile (from 'Makefile', line 65)
-OUTPUTMAIN := output\main.exe
 # default
 .SHELLFLAGS := -c
 # environment
@@ -92,40 +88,26 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 G++ = C:\MinGW\bin
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
-# environment
-VSCMD_ARG_TGT_ARCH = x86
+# makefile
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 1040
+VSCODE_PID = 13428
+# environment
+CLION = C:\Program Files\JetBrains\CLion 2022.1.2\bin;
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
-# makefile (from 'Makefile', line 48)
-INCLUDES := -Iinclude
+# environment
+CLION_VM_OPTIONS = C:\ja-netfilter\vmoptions\clion.vmoptions
 # automatic
 *F = $(notdir $*)
 # environment
-VSCMD_ARG_HOST_ARCH = x86
-# environment
-VSCMD_ARG_APP_PLAT = Desktop
-# environment
-LIBPATH = C:\Windows\Microsoft.NET\Framework\v4.0.30319
-# makefile (from 'Makefile', line 27)
-LIB := lib
+APPCODE_VM_OPTIONS = C:\ja-netfilter\vmoptions\appcode.vmoptions
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
-VS170COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\
-# environment
-DEVENVDIR = C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-__DOTNET_PREFERRED_BITNESS = 32
-# makefile (from 'Makefile', line 24)
-INCLUDE := include
 # environment
 ONEDRIVECONSUMER = C:\Users\ALL\OneDrive
 # default
@@ -145,13 +127,15 @@ COMSPEC = C:\Windows\system32\cmd.exe
 # environment
 WINDIR = C:\Windows
 # environment
-FRAMEWORK40VERSION = v4.0
+PHPSTORM_VM_OPTIONS = C:\ja-netfilter\vmoptions\phpstorm.vmoptions
+# environment
+RUBYMINE_VM_OPTIONS = C:\ja-netfilter\vmoptions\rubymine.vmoptions
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\bin\Roslyn;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\Tools\;C:\Users\ALL\vcpkg\installed\x64-windows\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\ALL\.cargo\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Calibre2\;C:\Program Files\Git\cmd;C:\Python310;C:\Program Files\Vim\vim82;C:\Program Files\Go\bin;C:\mingw64\bin;C:\Program Files\CMake\bin;C:\Users\ALL\vcpkg\scripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\ALL\AppData\Roaming\Python\Python310\Scripts;C:\Users\ALL\vcpkg\downloads\tools\bazel\4.2.2-windows;C:\msys64\usr\bin;C:\Program Files\Conan\conan;C:\Users\ALL\.cargo\bin;C:\Users\ALL\AppData\Roaming\npm;C:\Users\ALL\AppData\Local\Programs\Microsoft VS Code\bin;C:\tools\neovim\nvim-win64\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.1\bin;;C:\Users\ALL\go\bin;C:\Program Files\Go\bin;C:\vcpkg;C:\MinGW\bin;C:\msys64\mingw64\bin
+PATH = C:\Users\ALL\vcpkg\installed\x64-windows\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\ALL\.cargo\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Calibre2\;C:\Program Files\Git\cmd;C:\Python310;C:\Program Files\Vim\vim82;C:\Program Files\Go\bin;C:\mingw64\bin;C:\Program Files\CMake\bin;C:\Users\ALL\vcpkg\scripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\ALL\AppData\Roaming\Python\Python310\Scripts;C:\Users\ALL\vcpkg\downloads\tools\bazel\4.2.2-windows;C:\msys64\usr\bin;C:\Program Files\Conan\conan;C:\Users\ALL\.cargo\bin;C:\Users\ALL\AppData\Roaming\npm;C:\Users\ALL\AppData\Local\Programs\Microsoft VS Code\bin;C:\tools\neovim\nvim-win64\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.1\bin;;C:\Users\ALL\go\bin;C:\Program Files\Go\bin;C:\vcpkg;C:\MinGW\bin;C:\msys64\mingw64\bin;;C:\Program Files\JetBrains\CLion 2022.1.2\bin;;C:\Program Files\JetBrains\PyCharm 2022.1.3\bin;
 # environment
 ZES_ENABLE_SYSMAN = 1
 # environment
@@ -161,13 +145,19 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
+PYCHARM = C:\Program Files\JetBrains\PyCharm 2022.1.3\bin;
+# environment
 PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132969416522017658
-# makefile (from 'Makefile', line 30)
-MAIN := main.exe
-# makefile (from 'Makefile', line 33)
-LIBDIRS := lib
+# environment
+WEBIDE_VM_OPTIONS = C:\ja-netfilter\vmoptions\webide.vmoptions
+# environment
+PYCHARM_VM_OPTIONS = C:\ja-netfilter\vmoptions\pycharm.vmoptions
+# environment
+RIDER_VM_OPTIONS = C:\ja-netfilter\vmoptions\rider.vmoptions
+# environment
+IDEA_VM_OPTIONS = C:\ja-netfilter\vmoptions\idea.vmoptions
 # environment
 LOGONSERVER = \\DESKTOP-1E4BJE1
 # environment
@@ -177,35 +167,29 @@ COMMONPROGRAMFILES = C:\Program Files\Common Files
 # automatic
 ?F = $(notdir $?)
 # environment
-WINDOWSSDKVERSION = \
-# makefile (from 'Makefile', line 32)
-INCLUDEDIRS := include
-# environment
 PROGRAMW6432 = C:\Program Files
 # environment
+DATAGRIP_VM_OPTIONS = C:\ja-netfilter\vmoptions\datagrip.vmoptions
+# environment
 PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# environment
+WEBSTORM_VM_OPTIONS = C:\ja-netfilter\vmoptions\webstorm.vmoptions
 # automatic
 +F = $(notdir $+)
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# makefile (from 'Makefile', line 57)
-OBJECTS := 
 # environment
 USERDOMAIN = DESKTOP-1E4BJE1
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
-# makefile
-.DEFAULT_GOAL := all
-# makefile (from 'Makefile', line 35)
-RM := del /q /f
 # environment
-VISUALSTUDIOVERSION = 17.0
+DATASPELL_VM_OPTIONS = C:\ja-netfilter\vmoptions\dataspell.vmoptions
+# makefile
+.DEFAULT_GOAL := 
 # default
 MAKE_VERSION := 4.3
-# makefile (from 'Makefile', line 34)
-FIXPATH = $(subst /,\,$1)
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
@@ -215,17 +199,11 @@ NUMBER_OF_PROCESSORS = 12
 # environment
 PUBLIC = C:\Users\Public
 # environment
-VSINSTALLDIR = C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\
-# environment
-WINDOWSLIBPATH = References\CommonConfiguration\Neutral
-# makefile (from 'Makefile', line 31)
-SOURCEDIRS := src
+JETBRAINS_CLIENT_VM_OPTIONS = C:\ja-netfilter\vmoptions\jetbrains_client.vmoptions
 # environment
 APPDATA = C:\Users\ALL\AppData\Roaming
 # environment
 HOMEDRIVE = C:
-# environment
-VSCMD_VER = 17.1.6
 # environment
 PROCESSOR_ARCHITECTURE = AMD64
 # environment
@@ -240,8 +218,6 @@ ELECTRON_RUN_AS_NODE = 1
 TEMP = C:\Users\ALL\AppData\Local\Temp
 # environment
 VSCODE_IPC_HOOK = \\.\pipe\597f47cdcb7b579d808cd443020155ed-1.69.0-main-sock
-# environment
-WINDOWSSDKLIBVERSION = winv6.3\
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -251,31 +227,13 @@ SUFFIXES :=
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-__DOTNET_ADD_32BIT = 1
-# environment
 SESSIONNAME = Console
-# environment
-VSCODE_CLI = 1
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-__VSCMD_PREINIT_PATH = C:\Users\ALL\vcpkg\installed\x64-windows\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\ALL\.cargo\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Calibre2\;C:\Program Files\Git\cmd;C:\Python310;C:\Program Files\Vim\vim82;C:\Program Files\Go\bin;C:\mingw64\bin;C:\Program Files\CMake\bin;C:\Users\ALL\vcpkg\scripts;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\ALL\AppData\Roaming\Python\Python310\Scripts;C:\Users\ALL\vcpkg\downloads\tools\bazel\4.2.2-windows;C:\msys64\usr\bin;C:\Program Files\Conan\conan;C:\Users\ALL\.cargo\bin;C:\Users\ALL\AppData\Roaming\npm;C:\Users\ALL\AppData\Local\Programs\Microsoft VS Code\bin;C:\tools\neovim\nvim-win64\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.1\bin;;C:\Users\ALL\go\bin;C:\Program Files\Go\bin;C:\vcpkg;C:\MinGW\bin;C:\msys64\mingw64\bin;
-# makefile (from 'Makefile', line 10)
-CXXFLAGS := -std=c++17 -Wall -Wextra -g
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = a502
 # environment
-FRAMEWORKDIR = C:\Windows\Microsoft.NET\Framework\
-# makefile (from 'Makefile', line 7)
-CXX = g++
-# environment
-FRAMEWORKVERSION = v4.0.30319
-# makefile (from 'Makefile', line 15)
-LFLAGS = 
-# makefile (from 'Makefile', line 54)
-SOURCES := 
+GATEWAY_VM_OPTIONS = C:\ja-netfilter\vmoptions\gateway.vmoptions
 # environment
 CHOCOLATEYTOOLSLOCATION = C:\tools
 # environment
@@ -283,7 +241,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
 # environment
 VCPKG_DEFAULT_TRIPLET = x64-windows
 # variable set hash-table stats:
-# Load=136/1024=13%, Rehash=0, Collisions=21/184=11%
+# Load=114/1024=11%, Rehash=0, Collisions=10/137=7%
 
 # Pattern-specific Variable Values
 
@@ -291,10 +249,9 @@ VCPKG_DEFAULT_TRIPLET = x64-windows
 
 # Directories
 
-# src: could not be stat'd.
-# . (key c:/Users/ALL/PLs/C++/proC++, mtime 1657256546): 11 files, no impossibilities.
+# . (key c:/Users/ALL/PLs/C++/proC++, mtime 1657424807): 9 files, no impossibilities.
 
-# 11 files, no impossibilities in 2 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -302,36 +259,12 @@ VCPKG_DEFAULT_TRIPLET = x64-windows
 
 # Files
 
-main.exe:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 74):
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
-
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-06 09:32:29
-#  File has been updated.
-#  Successfully updated.
-
-clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 85):
-	$(RM) $(OUTPUTMAIN)
-	$(RM) $(call FIXPATH,$(OBJECTS))
-	@echo Cleanup complete!
-
-.cpp.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 81):
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
+#  File has been updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -339,77 +272,48 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 
-output:
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := output
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=4/13=31%
-#  recipe to execute (from 'Makefile', line 71):
-	$(MD) $(OUTPUT)
-
-all: output main.exe
+# Not a target:
+all:
 #  Command line target.
-#  Implicit rule search has not been done.
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
-#  recipe to execute (from 'Makefile', line 68):
-	@echo Executing 'all' complete!
-
-run: all
-#  Implicit rule search has not been done.
-#  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 90):
-	./$(OUTPUTMAIN)
-	@echo Executing 'run: all' complete!
 
 # Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
-.PHONY: clean
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+# Not a target:
+makefile.mak:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/29=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 156 B / avg = 7 B
-# current buf: size = 8162 B / used = 156 B / count = 20 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 147 B / avg = 9 B
+# current buf: size = 8162 B / used = 147 B / count = 16 / avg = 9 B
 
-# strcache performance: lookups = 38 / hit rate = 47%
+# strcache performance: lookups = 19 / hit rate = 15%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/38=0%
-# Finished Make data base on Fri Jul 08 09:49:53 2022
+# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
+# Finished Make data base on Sun Jul 10 08:16:49 2022
 
  
