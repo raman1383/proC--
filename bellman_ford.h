@@ -97,3 +97,26 @@ void BellmanFord(Graph graph, int src)
 
     print(dist, V);
 }
+
+/*
+    int V, E, gSrc;
+    int src, dst, weight;
+    cout << "Enter number of vertices: ";
+    cin >> V;
+    cout << "Enter number of edges: ";
+    cin >> E;
+    Graph G(V, E);
+    for (int i = 0; i < E; i++)
+    {
+        cout << "\nEdge " << i + 1 << "\nEnter source: ";
+        cin >> src;
+        cout << "Enter destination: ";
+        cin >> dst;
+        cout << "Enter weight: ";
+        cin >> weight;
+        G.addEdge(src, dst, weight);
+    }
+    cout << "\nEnter source: ";
+    cin >> gSrc;
+    BellmanFord(G, gSrc);
+*/
