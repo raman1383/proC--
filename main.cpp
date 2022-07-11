@@ -1,8 +1,8 @@
 #include <iostream>
+#include <memory>
 #include <vector>
 #include <array>
-#include <memory>
-#include "dijkstra.h"
+// #include "dijkstra.h"
 #include "bellman_ford.h"
 using std::array, std::vector, std::unique_ptr, std::shared_ptr;
 
@@ -14,9 +14,11 @@ public:
 	~Simple() { cout << "Simple destructor called!" << endl; }
 };
 
-void leaky();
-char **allocateCharacterBoard(size_t xDimension, size_t yDimension);
-void releaseCharacterBoard(char **&myArray, size_t xDimension);
+[[maybe_unused]] void leaky();
+
+[[maybe_unused]] char **allocateCharacterBoard(size_t xDimension, size_t yDimension);
+
+[[maybe_unused]] void releaseCharacterBoard(char **&myArray, size_t xDimension);
 void notLeaky(Simple *s);
 
 int main()
@@ -50,7 +52,7 @@ int main()
 	//! smart pointers !!
 	unique_ptr<Simple> mySimpleSmartPtr{new Simple{}};
 	notLeaky(mySimpleSmartPtr.get()); //!
-	mySimpleSmartPtr.reset(new Simple{});
+	mySimpleSmartPtr = std::make_unique<Simple>();
 
 	auto myVariableSizedArray{std::make_unique<int[]>(10)};
 	myVariableSizedArray[3] = 4;
@@ -58,15 +60,18 @@ int main()
 	myVariableSizedArray[1] = 2;
 	myVariableSizedArray[0] = 1;
 	myVariableSizedArray.~unique_ptr();
+
+
+
 }
 
-void leaky()
+[[maybe_unused]] void leaky()
 {
 	new int; // BUG! Orphans/leaks memory!
 	cout << "I just leaked an int!" << endl;
 }
 
-char **allocateCharacterBoard(size_t xDimension, size_t yDimension)
+[[maybe_unused]] char **allocateCharacterBoard(size_t xDimension, size_t yDimension)
 {
 	char **myArray{new char *[xDimension]}; // Allocate first dimension
 	for (size_t i{0}; i < xDimension; i++)
@@ -76,7 +81,7 @@ char **allocateCharacterBoard(size_t xDimension, size_t yDimension)
 	return myArray;
 }
 
-void releaseCharacterBoard(char **&myArray, size_t xDimension)
+[[maybe_unused]] void releaseCharacterBoard(char **&myArray, size_t xDimension)
 {
 	for (size_t i{0}; i < xDimension; i++)
 	{
