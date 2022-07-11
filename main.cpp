@@ -12,7 +12,7 @@ int main()
 		{0, 0, 0, 2, 1, 0}};
 	dijkstra(graph, 0);
 
-	int V, E, gsrc;
+	int V, E, gSrc;
 	int src, dst, weight;
 	cout << "Enter number of vertices: ";
 	cin >> V;
@@ -30,7 +30,7 @@ int main()
 		G.addEdge(src, dst, weight);
 	}
 	cout << "\nEnter source: ";
-	cin >> gsrc;
-	BellmanFord(G, gsrc);
+	cin >> gSrc;
+	BellmanFord(G, gSrc);
 	return 0;
 }

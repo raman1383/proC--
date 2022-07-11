@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 10:07:32 2022
+# Make data base, printed on Mon Jul 11 14:14:00 2022
 
 # Variables
 
@@ -45,7 +45,7 @@ GOPATH = C:\Users\ALL\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2908_EHUQWIHDOSSLBTWH
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15092_AENEKQPLRBVGDEKF
 # environment
 STUDIO_VM_OPTIONS = C:\ja-netfilter\vmoptions\studio.vmoptions
 # environment
@@ -101,7 +101,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2908
+VSCODE_PID = 15092
 # environment
 CLION = C:\Program Files\JetBrains\CLion 2022.1.2\bin;
 # automatic
@@ -286,10 +286,9 @@ VCPKG_DEFAULT_TRIPLET = x64-windows
 # Directories
 
 # src: could not be stat'd.
-# . (key c:/Users/ALL/PLs/C++/proC++, mtime 1657457356): 9 files, no impossibilities.
+# . (key c:/Users/ALL/PLs/C++/proC++, mtime 1657530760): 12 files, no impossibilities.
 
-#  
-9 files, no impossibilities in 2 directories.
+# 12 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -399,12 +398,12 @@ run: all
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 142 B / avg = 7 B
-# current buf: size = 8162 B / used = 142 B / count = 19 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 168 B / avg = 8 B
+# current buf: size = 8162 B / used = 168 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 36 / hit rate = 47%
+# strcache performance: lookups = 39 / hit rate = 46%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=0/36=0%
-# Finished Make data base on Mon Jul 11 10:07:32 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/39=0%
+# Finished Make data base on Mon Jul 11 14:14:00 2022
 
  

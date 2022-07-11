@@ -96,6 +96,4 @@ void BellmanFord(Graph graph, int src)
     }
 
     print(dist, V);
-
-    return;
 }
