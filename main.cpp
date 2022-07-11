@@ -5,9 +5,6 @@
 #include "dijkstra.h"
 #include "bellman_ford.h"
 using std::array, std::vector, std::unique_ptr, std::shared_ptr;
-void leaky();
-char **allocateCharacterBoard(size_t xDimension, size_t yDimension);
-void releaseCharacterBoard(char **&myArray, size_t xDimension);
 
 class Simple
 {
@@ -16,6 +13,11 @@ public:
 	Simple() { cout << "Simple constructor called!" << endl; }
 	~Simple() { cout << "Simple destructor called!" << endl; }
 };
+
+void leaky();
+char **allocateCharacterBoard(size_t xDimension, size_t yDimension);
+void releaseCharacterBoard(char **&myArray, size_t xDimension);
+void notLeaky(Simple *s);
 
 int main()
 {
@@ -46,6 +48,9 @@ int main()
 	vector<vector<int>> twoDimensionalVector{{}};
 
 	//! smart pointers !!
+	unique_ptr<Simple> mySimpleSmartPtr{new Simple{}};
+	notLeaky(mySimpleSmartPtr.get()); //!
+	mySimpleSmartPtr.reset(new Simple{});
 }
 
 void leaky()
@@ -75,8 +80,9 @@ void releaseCharacterBoard(char **&myArray, size_t xDimension)
 	myArray = nullptr;
 }
 
-void notLeaky()
+void notLeaky(Simple *s)
 {
-	auto mySimpleSmartPtr{std::make_unique_for_overwrite<Simple>()}; //!!!!
+	// auto mySimpleSmartPtr { make_unique<Simple>() };
+	auto mySimpleSmartPtr{std::make_unique<Simple>()}; //! better for performance
 	mySimpleSmartPtr->go();
 }
