@@ -1,6 +1,4 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for Windows32
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,18 +6,24 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 10 17:18:51 2022
+# Make data base, printed on Mon Jul 11 10:07:32 2022
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
+# makefile (from 'Makefile', line 18)
+OUTPUT := output
 # environment
 LC_ALL = C
+# makefile (from 'Makefile', line 21)
+SRC := src
 # environment
 USERPROFILE = C:\Users\ALL
 # environment
 DEVECOSTUDIO_VM_OPTIONS = C:\ja-netfilter\vmoptions\devecostudio.vmoptions
+# makefile (from 'Makefile', line 36)
+MD := mkdir
 # environment
 LOCALAPPDATA = C:\Users\ALL\AppData\Local
 # environment
@@ -28,6 +32,8 @@ VSCODE_CWD = C:\Users\ALL\AppData\Local\Programs\Microsoft VS Code
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
 SYSTEMROOT = C:\Windows
+# makefile (from 'Makefile', line 51)
+LIBS := -Llib
 # environment
 PROCESSOR_LEVEL = 6
 # environment
@@ -39,7 +45,7 @@ GOPATH = C:\Users\ALL\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13428_PDEEHRXPKVNCCSAW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2908_EHUQWIHDOSSLBTWH
 # environment
 STUDIO_VM_OPTIONS = C:\ja-netfilter\vmoptions\studio.vmoptions
 # environment
@@ -80,6 +86,8 @@ PROGRAMFILES = C:\Program Files
 JETBRAINSCLIENT_VM_OPTIONS = C:\ja-netfilter\vmoptions\jetbrainsclient.vmoptions
 # environment
 MFLAGS = -pqrR
+# makefile (from 'Makefile', line 65)
+OUTPUTMAIN := output\main.exe
 # default
 .SHELLFLAGS := -c
 # environment
@@ -88,26 +96,32 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 G++ = C:\MinGW\bin
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile
-MAKEFILE_LIST := 
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 13428
+VSCODE_PID = 2908
 # environment
 CLION = C:\Program Files\JetBrains\CLion 2022.1.2\bin;
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
 CLION_VM_OPTIONS = C:\ja-netfilter\vmoptions\clion.vmoptions
+# makefile (from 'Makefile', line 48)
+INCLUDES := -Iinclude
 # automatic
 *F = $(notdir $*)
 # environment
 APPCODE_VM_OPTIONS = C:\ja-netfilter\vmoptions\appcode.vmoptions
+# makefile (from 'Makefile', line 27)
+LIB := lib
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 24)
+INCLUDE := include
 # environment
 ONEDRIVECONSUMER = C:\Users\ALL\OneDrive
 # default
@@ -152,12 +166,16 @@ PROMPT = $P$G
 CHOCOLATEYLASTPATHUPDATE = 132969416522017658
 # environment
 WEBIDE_VM_OPTIONS = C:\ja-netfilter\vmoptions\webide.vmoptions
+# makefile (from 'Makefile', line 30)
+MAIN := main.exe
 # environment
 PYCHARM_VM_OPTIONS = C:\ja-netfilter\vmoptions\pycharm.vmoptions
 # environment
 RIDER_VM_OPTIONS = C:\ja-netfilter\vmoptions\rider.vmoptions
 # environment
 IDEA_VM_OPTIONS = C:\ja-netfilter\vmoptions\idea.vmoptions
+# makefile (from 'Makefile', line 33)
+LIBDIRS := lib
 # environment
 LOGONSERVER = \\DESKTOP-1E4BJE1
 # environment
@@ -166,6 +184,8 @@ USERNAME = ALL
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # automatic
 ?F = $(notdir $?)
+# makefile (from 'Makefile', line 32)
+INCLUDEDIRS := include
 # environment
 PROGRAMW6432 = C:\Program Files
 # environment
@@ -178,6 +198,8 @@ WEBSTORM_VM_OPTIONS = C:\ja-netfilter\vmoptions\webstorm.vmoptions
 +F = $(notdir $+)
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from 'Makefile', line 57)
+OBJECTS := 
 # environment
 USERDOMAIN = DESKTOP-1E4BJE1
 # 'override' directive
@@ -187,9 +209,13 @@ OS = Windows_NT
 # environment
 DATASPELL_VM_OPTIONS = C:\ja-netfilter\vmoptions\dataspell.vmoptions
 # makefile
-.DEFAULT_GOAL := 
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 35)
+RM := del /q /f
 # default
 MAKE_VERSION := 4.3
+# makefile (from 'Makefile', line 34)
+FIXPATH = $(subst /,\,$1)
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
@@ -198,6 +224,8 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-1E4BJE1
 NUMBER_OF_PROCESSORS = 12
 # environment
 PUBLIC = C:\Users\Public
+# makefile (from 'Makefile', line 31)
+SOURCEDIRS := src
 # environment
 JETBRAINS_CLIENT_VM_OPTIONS = C:\ja-netfilter\vmoptions\jetbrains_client.vmoptions
 # environment
@@ -228,12 +256,20 @@ SUFFIXES :=
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
+# makefile (from 'Makefile', line 10)
+CXXFLAGS := -std=c++20 -Wall -Wextra -g
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 PROCESSOR_REVISION = a502
+# makefile (from 'Makefile', line 7)
+CXX = clang++
+# makefile (from 'Makefile', line 15)
+LFLAGS = 
 # environment
 GATEWAY_VM_OPTIONS = C:\ja-netfilter\vmoptions\gateway.vmoptions
+# makefile (from 'Makefile', line 54)
+SOURCES := 
 # environment
 CHOCOLATEYTOOLSLOCATION = C:\tools
 # environment
@@ -241,7 +277,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
 # environment
 VCPKG_DEFAULT_TRIPLET = x64-windows
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=10/137=7%
+# Load=133/1024=13%, Rehash=0, Collisions=16/181=9%
 
 # Pattern-specific Variable Values
 
@@ -249,9 +285,11 @@ VCPKG_DEFAULT_TRIPLET = x64-windows
 
 # Directories
 
-# . (key c:/Users/ALL/PLs/C++/proC++, mtime 1657444674): 8 files, no impossibilities.
+# src: could not be stat'd.
+# . (key c:/Users/ALL/PLs/C++/proC++, mtime 1657457356): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+#  
+9 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -259,12 +297,36 @@ VCPKG_DEFAULT_TRIPLET = x64-windows
 
 # Files
 
+main.exe:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 74):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
+
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  File does not exist.
+#  Last modified 2022-07-10 08:16:39
 #  File has been updated.
-#  Failed to be updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 85):
+	$(RM) $(OUTPUTMAIN)
+	$(RM) $(call FIXPATH,$(OBJECTS))
+	@echo Cleanup complete!
+
+.cpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 81):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
 
 # Not a target:
 .DEFAULT:
@@ -272,48 +334,77 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-all:
-#  Command line target.
-#  Implicit rule search has been done.
+output:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
 #  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := output
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=4/13=31%
+#  recipe to execute (from 'Makefile', line 71):
+	$(MD) $(OUTPUT)
+
+all: output main.exe
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 68):
+	@echo Executing 'all' complete!
+
+run: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 90):
+	./$(OUTPUTMAIN)
+	@echo Executing 'run: all' complete!
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-makefile.mak:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-GNUmakefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=10/1024=1%, Rehash=0, Collisions=0/29=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 132 B / avg = 8 B
-# current buf: size = 8162 B / used = 132 B / count = 15 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 142 B / avg = 7 B
+# current buf: size = 8162 B / used = 142 B / count = 19 / avg = 7 B
 
-# strcache performance: lookups = 18 / hit rate = 16%
+# strcache performance: lookups = 36 / hit rate = 47%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=0/18=0%
-# Finished Make data base on Sun Jul 10 17:18:51 2022
+# Load=19/8192=0%, Rehash=0, Collisions=0/36=0%
+# Finished Make data base on Mon Jul 11 10:07:32 2022
 
  
