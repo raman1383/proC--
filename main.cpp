@@ -9,7 +9,7 @@ using std::array, std::vector, std::unique_ptr, std::shared_ptr;
 class Simple
 {
 public:
-	void go() { cout << "called go method, might fail !!!" << endl; }
+	static void go() { cout << "called go method, might fail !!!" << endl; }
 	Simple() { cout << "Simple constructor called!" << endl; }
 	~Simple() { cout << "Simple destructor called!" << endl; }
 };
@@ -51,6 +51,13 @@ int main()
 	unique_ptr<Simple> mySimpleSmartPtr{new Simple{}};
 	notLeaky(mySimpleSmartPtr.get()); //!
 	mySimpleSmartPtr.reset(new Simple{});
+
+	auto myVariableSizedArray{std::make_unique<int[]>(10)};
+	myVariableSizedArray[3] = 4;
+	myVariableSizedArray[2] = 3;
+	myVariableSizedArray[1] = 2;
+	myVariableSizedArray[0] = 1;
+	myVariableSizedArray.~unique_ptr();
 }
 
 void leaky()
@@ -83,7 +90,6 @@ void releaseCharacterBoard(char **&myArray, size_t xDimension)
 void notLeaky(Simple *s)
 {
 	// auto mySimpleSmartPtr { make_unique<Simple>() };
-	auto mySimpleSmartPtr{std::make_unique<Simple>()}; //! better for performance
+	auto mySimpleSmartPtr{std::make_unique_for_overwrite<Simple>()}; //! better for performance
 	mySimpleSmartPtr->go();
-	mySimpleSmartPtr.release();
 }
