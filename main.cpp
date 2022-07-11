@@ -85,4 +85,5 @@ void notLeaky(Simple *s)
 	// auto mySimpleSmartPtr { make_unique<Simple>() };
 	auto mySimpleSmartPtr{std::make_unique<Simple>()}; //! better for performance
 	mySimpleSmartPtr->go();
+	mySimpleSmartPtr.release();
 }
