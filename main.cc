@@ -1,5 +1,6 @@
-#include "dijkstra.hh"
-#include "bellman_ford.hh"
+#include "funStuff/dijkstra.h"
+#include "funStuff/bellman_ford.h"
+#include "funStuff/quickSort.h"
 
 int main()
 {
@@ -11,4 +12,19 @@ int main()
         {0, 1, 3, 2, 0, 1},
         {0, 0, 0, 2, 1, 0}};
     dijkstra(graph, 0);
+
+    int size;
+    std::cout << "\nEnter the number of elements : ";
+    std::cin >> size;
+    int *arr = new int[size];
+    std::cout << "\nEnter the unsorted elements : ";
+    for (int i = 0; i < size; ++i)
+    {
+        std::cout << "\n";
+        std::cin >> arr[i];
+    }
+    sorting::quickSort(arr, 0, size);
+    std::cout << "Sorted array\n";
+    sorting::show(arr, size);
+    delete[] arr;
 }
