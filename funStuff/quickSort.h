@@ -45,3 +45,20 @@ namespace sorting
     }
 
 } // namespace sorting
+
+/*
+    int size;
+    std::cout << "\nEnter the number of elements : ";
+    std::cin >> size;
+    int *arr = new int[size];
+    std::cout << "\nEnter the unsorted elements : ";
+    for (int i = 0; i < size; ++i)
+    {
+        std::cout << "\n";
+        std::cin >> arr[i];
+    }
+    sorting::quickSort(arr, 0, size);
+    std::cout << "Sorted array\n";
+    sorting::show(arr, size);
+    delete[] arr;
+*/
