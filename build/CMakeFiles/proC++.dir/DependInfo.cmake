@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ALL/PLs/C++/proC++/main.cpp" "CMakeFiles/proC++.dir/main.cpp.obj" "gcc" "CMakeFiles/proC++.dir/main.cpp.obj.d"
+  "C:/Users/ALL/PLs/C++/proC++/main.cc" "CMakeFiles/proC++.dir/main.cc.obj" "gcc" "CMakeFiles/proC++.dir/main.cc.obj.d"
   )
 
 # Targets to which this target links.

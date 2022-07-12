@@ -152,7 +152,7 @@
 		{
 			"backtrace" : 2,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],

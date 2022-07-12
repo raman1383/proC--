@@ -68,29 +68,29 @@ include CMakeFiles/proC++.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/proC++.dir/flags.make
 
-CMakeFiles/proC++.dir/main.cpp.obj: CMakeFiles/proC++.dir/flags.make
-CMakeFiles/proC++.dir/main.cpp.obj: CMakeFiles/proC++.dir/includes_CXX.rsp
-CMakeFiles/proC++.dir/main.cpp.obj: C:/Users/ALL/PLs/C++/proC++/main.cpp
-CMakeFiles/proC++.dir/main.cpp.obj: CMakeFiles/proC++.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ALL\PLs\C++\proC++\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proC++.dir/main.cpp.obj"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proC++.dir/main.cpp.obj -MF CMakeFiles\proC++.dir\main.cpp.obj.d -o CMakeFiles\proC++.dir\main.cpp.obj -c C:\Users\ALL\PLs\C++\proC++\main.cpp
+CMakeFiles/proC++.dir/main.cc.obj: CMakeFiles/proC++.dir/flags.make
+CMakeFiles/proC++.dir/main.cc.obj: CMakeFiles/proC++.dir/includes_CXX.rsp
+CMakeFiles/proC++.dir/main.cc.obj: C:/Users/ALL/PLs/C++/proC++/main.cc
+CMakeFiles/proC++.dir/main.cc.obj: CMakeFiles/proC++.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ALL\PLs\C++\proC++\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proC++.dir/main.cc.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proC++.dir/main.cc.obj -MF CMakeFiles\proC++.dir\main.cc.obj.d -o CMakeFiles\proC++.dir\main.cc.obj -c C:\Users\ALL\PLs\C++\proC++\main.cc
 
-CMakeFiles/proC++.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proC++.dir/main.cpp.i"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ALL\PLs\C++\proC++\main.cpp > CMakeFiles\proC++.dir\main.cpp.i
+CMakeFiles/proC++.dir/main.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proC++.dir/main.cc.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ALL\PLs\C++\proC++\main.cc > CMakeFiles\proC++.dir\main.cc.i
 
-CMakeFiles/proC++.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proC++.dir/main.cpp.s"
-	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ALL\PLs\C++\proC++\main.cpp -o CMakeFiles\proC++.dir\main.cpp.s
+CMakeFiles/proC++.dir/main.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proC++.dir/main.cc.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ALL\PLs\C++\proC++\main.cc -o CMakeFiles\proC++.dir\main.cc.s
 
 # Object files for target proC++
 proC_______OBJECTS = \
-"CMakeFiles/proC++.dir/main.cpp.obj"
+"CMakeFiles/proC++.dir/main.cc.obj"
 
 # External object files for target proC++
 proC_______EXTERNAL_OBJECTS =
 
-proC++.exe: CMakeFiles/proC++.dir/main.cpp.obj
+proC++.exe: CMakeFiles/proC++.dir/main.cc.obj
 proC++.exe: CMakeFiles/proC++.dir/build.make
 proC++.exe: CMakeFiles/proC++.dir/linklibs.rsp
 proC++.exe: CMakeFiles/proC++.dir/objects1.rsp

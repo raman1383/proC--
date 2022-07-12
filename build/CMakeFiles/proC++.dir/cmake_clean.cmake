@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/proC++.dir/main.cpp.obj"
-  "CMakeFiles/proC++.dir/main.cpp.obj.d"
+  "CMakeFiles/proC++.dir/main.cc.obj"
+  "CMakeFiles/proC++.dir/main.cc.obj.d"
   "libproC++.dll.a"
   "proC++.exe"
   "proC++.exe.manifest"

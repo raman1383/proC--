@@ -522,29 +522,29 @@ proC++/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/build
 .PHONY : proC++/fast
 
-main.obj: main.cpp.obj
+main.obj: main.cc.obj
 .PHONY : main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+main.cc.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/main.cc.obj
+.PHONY : main.cc.obj
 
-main.i: main.cpp.i
+main.i: main.cc.i
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.cpp.s
+main.s: main.cc.s
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\proC++.dir\build.make CMakeFiles/proC++.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:

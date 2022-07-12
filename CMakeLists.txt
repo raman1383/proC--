@@ -14,7 +14,7 @@ LINK_DIRECTORIES(
 include(CTest)
 enable_testing()
 
-add_executable(proC++ main.cpp)
+add_executable(proC++ main.cc)
 
 TARGET_LINK_LIBRARIES(proC++
 sqlite3 fmt
