@@ -3,12 +3,12 @@
 #include <climits>
 using std::cout, std::endl;
 
-int miniDist(int distance[], bool Tset[])
+int miniDist(const int distance[], const bool Tset[])
 {
     int minimum = INT_MAX, ind;
     for (int k = 0; k < 6; k++)
     {
-        if (Tset[k] == false && distance[k] <= minimum)
+        if (!Tset[k] && distance[k] <= minimum)
         {
             minimum = distance[k];
             ind = k;
@@ -30,14 +30,14 @@ void dijkstra(int graph[6][6], int src)
 
     distance[src] = 0;
 
-    for (int k = 0; k < 6; k++)
+    for (int i = 0; i < 6; i++)
     {
         int m = miniDist(distance, Tset);
         Tset[m] = true;
-        for (int k = 0; k < 6; k++)
+        for (int j = 0; j < 6; j++)
         {
-            if (!Tset[k] && graph[m][k] && distance[m] != INT_MAX && distance[m] + graph[m][k] < distance[k])
-                distance[k] = distance[m] + graph[m][k];
+            if (!Tset[j] && graph[m][j] && distance[m] != INT_MAX && distance[m] + graph[m][j] < distance[j])
+                distance[j] = distance[m] + graph[m][j];
         }
     }
     cout << "Vertex\t\tDistance from source vertex" << endl;
@@ -49,12 +49,5 @@ void dijkstra(int graph[6][6], int src)
 }
 
 /*
-    int graph[6][6] = {
-        {0, 1, 2, 0, 0, 0},
-        {1, 0, 0, 5, 1, 0},
-        {2, 0, 0, 2, 3, 0},
-        {0, 5, 2, 0, 2, 2},
-        {0, 1, 3, 2, 0, 1},
-        {0, 0, 0, 2, 1, 0}};
-    dijkstra(graph, 0);
+
 */

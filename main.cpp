@@ -1,100 +1,36 @@
-#include <iostream>
-#include <memory>
-#include <vector>
-#include <array>
-// #include "dijkstra.h"
+#include "dijkstra.h"
 #include "bellman_ford.h"
-using std::array, std::vector, std::unique_ptr, std::shared_ptr;
-
-class Simple
-{
-public:
-	static void go() { cout << "called go method, might fail !!!" << endl; }
-	Simple() { cout << "Simple constructor called!" << endl; }
-	~Simple() { cout << "Simple destructor called!" << endl; }
-};
-
-[[maybe_unused]] void leaky();
-
-[[maybe_unused]] char **allocateCharacterBoard(size_t xDimension, size_t yDimension);
-
-[[maybe_unused]] void releaseCharacterBoard(char **&myArray, size_t xDimension);
-void notLeaky(Simple *s);
-
-int main()
-{
-	/*
-	int *ptr{nullptr};
-	ptr = new int;
-	*/
-	// OR
-	int *ptr{new int};
-	delete ptr;
-	ptr = nullptr;
-
-	int **handle{nullptr};
-	handle = new int *;
-	*handle = new int;
-	delete *handle, handle;	   // first deallocate
-	*handle, handle = nullptr; // then set to nullptr
-
-	int myArray[]{};			 // an address
-	int *myArray2{new int[5]{}}; // (fixed size array) an address, Zero(dereferenced)
-	delete[] myArray2;
-	myArray2 = nullptr;
-
-	Simple *mySimpleArray{new Simple[4]};
-	delete[] mySimpleArray;
-	mySimpleArray = nullptr;
-
-	vector<vector<int>> twoDimensionalVector{{}};
-
-	//! smart pointers !!
-	unique_ptr<Simple> mySimpleSmartPtr{new Simple{}};
-	notLeaky(mySimpleSmartPtr.get()); //!
-	mySimpleSmartPtr = std::make_unique<Simple>();
-
-	auto myVariableSizedArray{std::make_unique<int[]>(10)};
-	myVariableSizedArray[3] = 4;
-	myVariableSizedArray[2] = 3;
-	myVariableSizedArray[1] = 2;
-	myVariableSizedArray[0] = 1;
-	myVariableSizedArray.~unique_ptr();
 
 
+int main() {
+    int graph[6][6] = {
+            {0, 1, 2, 0, 0, 0},
+            {1, 0, 0, 5, 1, 0},
+            {2, 0, 0, 2, 3, 0},
+            {0, 5, 2, 0, 2, 2},
+            {0, 1, 3, 2, 0, 1},
+            {0, 0, 0, 2, 1, 0}};
+    dijkstra(graph, 0);
 
-}
 
-[[maybe_unused]] void leaky()
-{
-	new int; // BUG! Orphans/leaks memory!
-	cout << "I just leaked an int!" << endl;
-}
+    int V, E, gSrc;
+    int src, dst, weight;
+    cout << "Enter number of vertices: ";
+    cin >> V;
+    cout << "Enter number of edges: ";
+    cin >> E;
+    Graph G(V, E);
+    for (int i = 0; i < E; i++) {
+        cout << "\nEdge " << i + 1 << "\nEnter source: ";
+        cin >> src;
+        cout << "Enter destination: ";
+        cin >> dst;
+        cout << "Enter weight: ";
+        cin >> weight;
+        G.addEdge(src, dst, weight);
+    }
+    cout << "\nEnter source: ";
+    cin >> gSrc;
+    BellmanFord(G, gSrc);
 
-[[maybe_unused]] char **allocateCharacterBoard(size_t xDimension, size_t yDimension)
-{
-	char **myArray{new char *[xDimension]}; // Allocate first dimension
-	for (size_t i{0}; i < xDimension; i++)
-	{
-		myArray[i] = new char[yDimension]; // Allocate ith subarray
-	}
-	return myArray;
-}
-
-[[maybe_unused]] void releaseCharacterBoard(char **&myArray, size_t xDimension)
-{
-	for (size_t i{0}; i < xDimension; i++)
-	{
-		delete[] myArray[i]; // Delete ith subarray
-		myArray[i] = nullptr;
-	}
-	delete[] myArray; // Delete first dimension
-	myArray = nullptr;
-}
-
-void notLeaky(Simple *s)
-{
-	// auto mySimpleSmartPtr { make_unique<Simple>() };
-	auto mySimpleSmartPtr{std::make_unique_for_overwrite<Simple>()}; //! better for performance
-	mySimpleSmartPtr->go();
 }

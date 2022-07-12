@@ -1,4 +1,4 @@
-#include <limits.h>
+#include <climits>
 #include <iostream>
 using std::cout, std::endl, std::cin;
 // Wrapper class for storing an edge
@@ -16,7 +16,7 @@ public:
     Edge *edges;
 
     // Constructs a graph with V vertices and E edges
-    Graph(int V, int E)
+    [[maybe_unused]] Graph(int V, int E)
     {
         this->vertexNum = V;
         this->edgeNum = E;
@@ -24,12 +24,12 @@ public:
     }
 
     // Adds the given edge to the graph
-    void addEdge(int src, int dst, int weight)
+    [[maybe_unused]] void addEdge(int src, int dst, int weight) const
     {
         static int edgeInd = 0;
         if (edgeInd < this->edgeNum)
         {
-            Edge newEdge;
+            Edge newEdge{};
             newEdge.src = src;
             newEdge.dst = dst;
             newEdge.weight = weight;
@@ -54,7 +54,7 @@ void print(int dist[], int V)
 // The main function that finds the shortest path from given source
 // to all other vertices using Bellman-Ford.It also detects negative
 // weight cycle
-void BellmanFord(Graph graph, int src)
+[[maybe_unused]] void BellmanFord(Graph graph, int src)
 {
     int V = graph.vertexNum;
     int E = graph.edgeNum;
@@ -66,7 +66,7 @@ void BellmanFord(Graph graph, int src)
         dist[i] = INT_MAX;
     dist[src] = 0;
 
-    // Calculate shortest path distance from source to all edges
+    // Calculate the shortest path distance from source to all edges
     // A path can contain maximum (|V|-1) edges
     for (int i = 0; i <= V - 1; i++)
         for (int j = 0; j < E; j++)
@@ -99,24 +99,5 @@ void BellmanFord(Graph graph, int src)
 }
 
 /*
-    int V, E, gSrc;
-    int src, dst, weight;
-    cout << "Enter number of vertices: ";
-    cin >> V;
-    cout << "Enter number of edges: ";
-    cin >> E;
-    Graph G(V, E);
-    for (int i = 0; i < E; i++)
-    {
-        cout << "\nEdge " << i + 1 << "\nEnter source: ";
-        cin >> src;
-        cout << "Enter destination: ";
-        cin >> dst;
-        cout << "Enter weight: ";
-        cin >> weight;
-        G.addEdge(src, dst, weight);
-    }
-    cout << "\nEnter source: ";
-    cin >> gSrc;
-    BellmanFord(G, gSrc);
+
 */
