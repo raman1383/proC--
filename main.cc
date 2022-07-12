@@ -4,7 +4,5 @@
 
 int main()
 {
-
-    int 👁️ = 10;
-    cout << 👁️ ;
+    cout << "Hello bitch !" << endl;
 }
