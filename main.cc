@@ -5,5 +5,5 @@
 
 int main()
 {
-    cout << "Hello Bitch ! -- " << INT_MAX << endl;
+    cout << "C++ & Python are king" << endl;
 }
