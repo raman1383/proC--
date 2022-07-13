@@ -5,5 +5,5 @@
 
 int main()
 {
-    cout << "C++ & Python are king" << endl;
+    cout << "Welcome back my king " << endl;
 }
