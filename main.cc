@@ -5,5 +5,6 @@
 
 int main()
 {
-    cout << "Welcome back my king " << endl;
+    int x = 'x';
+    cout << "Welcome back my king " << x << endl;
 }
